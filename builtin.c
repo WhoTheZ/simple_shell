@@ -11,7 +11,7 @@ int exec_builtin(data *d)
 	builtin builtin[] = {
 		{"exit", builtin_exit},
 		{"env", builtin_env},
-		{"setenv", builtin_setnew},
+		{"setenv", builtin_setenv},
 		{"unseten", builtin_unsetenv},
 		{"cd", builtin_cd},
 		{NULL, NULL},
