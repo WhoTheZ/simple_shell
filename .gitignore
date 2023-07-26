@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 
+=======
+# Ignore all files
+*
+
+# Except for .c and .h files
+!*.c
+!*.h
+!*.md
+!.gitignore
+!AUTHORS
+>>>>>>> f1a5ff0a03c38f1ccbefcd45d4ece28d9e82b737
