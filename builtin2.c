@@ -21,7 +21,7 @@ void builtin_cd(data *d)
 	   else
 	   {
 		   _setenv(d, "OLDPWD", _getenv("PWD"));
-		   if (getcwd(cwd, sizeof(cwd)) = NULL)
+		   if (getcwd(cwd, sizeof(cwd)) == NULL)
 			   perror("getcwd() error");
 		   _setenv(d, "PWD", cwd);
 	   }
