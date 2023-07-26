@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
- *
- *
+ * exec_builtin - check if built in and then exec
+ * @d: data struct input
+ * Return: 1 if built in, 0 if not
  */
 
 int exec_builtin(data *d)
@@ -32,10 +30,9 @@ int exec_builtin(data *d)
 		}
 
 /**
- *
- *
- *
- *
+ * built_exit - exits the shell
+ * @d: data struct input
+ * Return: void
  */
 		void builtin_exit(data *d)
 		{
@@ -62,11 +59,9 @@ int exec_builtin(data *d)
 				exit(d->last_exit_status);
 			}
 /**
- *
- *
- *
- *
- *
+ * bultin_env - prints are the currents environment
+ * @d: data struct input
+ * Return: void
  */
 			void builtin_env(data *d)
 			{
@@ -82,12 +77,9 @@ int exec_builtin(data *d)
 			}
 
 /**
- *
- *
- *
- *
- *
- *
+ * builtin_setenv - initialize a new environment variable
+ * @d: data struct input
+ * Return: void
  */
 			void builtin_setenv(data *d)
 			{
@@ -102,9 +94,9 @@ int exec_builtin(data *d)
 							}
 
 /**
- *
- *
- *
+ * builtin_unsetenv - Remove an environment variable
+ * @d: data struct input
+ * Return: void
  */
 			void builtin_unsetenv(data *d)
 			{
