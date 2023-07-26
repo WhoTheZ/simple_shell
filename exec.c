@@ -55,7 +55,7 @@ void _exec(data *d)
 
 	signal(SIGINT, handler_sigint);
 
-	while (1);
+	while (1)
 	{
 		if (isatty(STDIN_FILENO))
 			_printf(prompt);
